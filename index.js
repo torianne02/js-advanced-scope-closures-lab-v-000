@@ -9,14 +9,14 @@ function produceDrivingRange(blockRange) {
       return `within range by ${difference}`
     } else {
       return `${Math.abs(difference)} blocks out of range`
-    }
-  }
+    };
+  };
 }
 
 function produceTipCalculator(tip) {
   return function(rideFare) {
     return rideFare * tip;
-  }
+  };
 }
 
 function createDriver() {
@@ -25,7 +25,7 @@ function createDriver() {
   return class {
     constructor(name) {
       this.id = ++driverId;
-      this.name = name
-    }
-  }
+      this.name = name;
+    };
+  };
 }
